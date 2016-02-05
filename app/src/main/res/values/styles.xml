@@ -1,11 +1,37 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NineBoxContainerBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:onClick">onContainerClick</item>
+        <item name="android:background">
+            @drawable/activity_search_ninebox_keyboard_container_selector
+        </item>
+    </style>
+
+    <style name="NineBoxContainer" parent="NineBoxContainerBase">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">
+            @drawable/activity_search_ninebox_keyboard_button_font_selector
+        </item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_window_open</item>
+        <item name="android:windowExitAnimation">@anim/popup_window_close</item>
     </style>
 
 </resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_search_ninebox_keyboard_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_num_one"
+                style="@style/NineBoxContainer"
+                android:nextFocusLeft="@+id/activity_search_ninebox_keyboard_btn_recommend"
+                android:text="1">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_abc2"
+                style="@style/NineBoxContainer"
+                android:text="ABC2">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_def3"
+                style="@style/NineBoxContainer"
+                android:text="DEF3">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_keyboard_btn_clear"
+                style="@style/NineBoxContainer"
+                android:text="Clear">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_ghi4"
+                style="@style/NineBoxContainer"
+                android:nextFocusLeft="@+id/activity_search_ninebox_keyboard_btn_recommend"
+                android:text="GHI4">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_jkl5"
+                style="@style/NineBoxContainer"
+                android:text="JKL5">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_mno6"
+                style="@style/NineBoxContainer"
+                android:text="MNO6">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_keyboard_btn_del"
+                style="@style/NineBoxContainer"
+                android:text="Del">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_pqrs7"
+                style="@style/NineBoxContainer"
+                android:nextFocusDown="@+id/activity_search_ninebox_keyboard_btn_num_one"
+                android:nextFocusLeft="@+id/activity_search_ninebox_keyboard_btn_recommend"
+                android:text="PQRS7">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_tuv8"
+                style="@style/NineBoxContainer"
+                android:nextFocusDown="@+id/activity_search_ninebox_keyboard_btn_abc2"
+                android:text="TUV8">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_wxyz9"
+                style="@style/NineBoxContainer"
+                android:nextFocusDown="@+id/activity_search_ninebox_keyboard_btn_def3"
+                android:text="WXYZ9">
+            </Button>
+
+            <Button
+                android:id="@+id/activity_search_ninebox_keyboard_btn_num_zero"
+                style="@style/NineBoxContainer"
+                android:nextFocusDown="@+id/activity_search_keyboard_btn_clear"
+                android:text="0">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
